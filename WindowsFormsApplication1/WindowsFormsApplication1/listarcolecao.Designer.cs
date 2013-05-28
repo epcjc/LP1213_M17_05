@@ -35,6 +35,7 @@
             this.database1DataSet = new WindowsFormsApplication1.Database1DataSet();
             this.seloBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.seloTableAdapter = new WindowsFormsApplication1.Database1DataSetTableAdapters.SeloTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seloBindingSource)).BeginInit();
@@ -73,12 +74,23 @@
             // 
             this.seloTableAdapter.ClearBeforeFill = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(260, 396);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Menu";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // listarcolecao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(626, 380);
+            this.ClientSize = new System.Drawing.Size(626, 431);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.listBox1);
             this.Name = "listarcolecao";
@@ -98,5 +110,6 @@
         private Database1DataSet database1DataSet;
         private System.Windows.Forms.BindingSource seloBindingSource;
         private Database1DataSetTableAdapters.SeloTableAdapter seloTableAdapter;
+        private System.Windows.Forms.Button button1;
     }
 }

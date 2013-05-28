@@ -9,23 +9,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class listarcolecao : Form
+    public partial class inserircolecao : Form
     {
-        public listarcolecao()
+        public inserircolecao()
         {
             InitializeComponent();
         }
 
-        private void listarcolecao_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'database1DataSet.Selo' table. You can move, or remove it, as needed.
-            this.seloTableAdapter.Fill(this.database1DataSet.Selo);
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 frm = new Form1();
+            inserircolecao frm = new inserircolecao();
             frm.Show();
         }
     }

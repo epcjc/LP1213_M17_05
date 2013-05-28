@@ -27,12 +27,20 @@ namespace WindowsFormsApplication1
         {
             try
             {
-               // this.seloTableAdapter.Fill_NC(this.database1DataSet.selo, textBox1.Text);
+               this.seloTableAdapter.Fill_NC(this.database1DataSet.Selo, textBox1.Text);
+
+               
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro");
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1();
+            frm.Show();
         }
     }
 }

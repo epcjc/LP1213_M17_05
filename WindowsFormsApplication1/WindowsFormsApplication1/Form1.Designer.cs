@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.restaurantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inserirAlterarEEliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,6 +38,7 @@
             this.listarCriticasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inserirCriticaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,7 +61,8 @@
             this.restaurantesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inserirAlterarEEliminarToolStripMenuItem,
             this.pesquisarRestauranteToolStripMenuItem,
-            this.classificação5ToolStripMenuItem});
+            this.classificação5ToolStripMenuItem,
+            this.inserirToolStripMenuItem});
             this.restaurantesToolStripMenuItem.Name = "restaurantesToolStripMenuItem";
             this.restaurantesToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.restaurantesToolStripMenuItem.Text = "Selos";
@@ -67,20 +70,23 @@
             // inserirAlterarEEliminarToolStripMenuItem
             // 
             this.inserirAlterarEEliminarToolStripMenuItem.Name = "inserirAlterarEEliminarToolStripMenuItem";
-            this.inserirAlterarEEliminarToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
-            this.inserirAlterarEEliminarToolStripMenuItem.Text = "Inserir, Alterar e Eliminar";
+            this.inserirAlterarEEliminarToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.inserirAlterarEEliminarToolStripMenuItem.Text = "Alterar e Eliminar";
+            this.inserirAlterarEEliminarToolStripMenuItem.Click += new System.EventHandler(this.inserirAlterarEEliminarToolStripMenuItem_Click);
             // 
             // pesquisarRestauranteToolStripMenuItem
             // 
             this.pesquisarRestauranteToolStripMenuItem.Name = "pesquisarRestauranteToolStripMenuItem";
-            this.pesquisarRestauranteToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.pesquisarRestauranteToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.pesquisarRestauranteToolStripMenuItem.Text = "Pesquisar Selo";
+            this.pesquisarRestauranteToolStripMenuItem.Click += new System.EventHandler(this.pesquisarRestauranteToolStripMenuItem_Click);
             // 
             // classificação5ToolStripMenuItem
             // 
             this.classificação5ToolStripMenuItem.Name = "classificação5ToolStripMenuItem";
-            this.classificação5ToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
-            this.classificação5ToolStripMenuItem.Text = "Coleção";
+            this.classificação5ToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.classificação5ToolStripMenuItem.Text = "Listar";
+            this.classificação5ToolStripMenuItem.Click += new System.EventHandler(this.classificação5ToolStripMenuItem_Click);
             // 
             // críticaToolStripMenuItem
             // 
@@ -96,27 +102,38 @@
             this.listarCriticasToolStripMenuItem.Name = "listarCriticasToolStripMenuItem";
             this.listarCriticasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.listarCriticasToolStripMenuItem.Text = "Listar Coleção";
+            this.listarCriticasToolStripMenuItem.Click += new System.EventHandler(this.listarCriticasToolStripMenuItem_Click);
             // 
             // inserirCriticaToolStripMenuItem
             // 
             this.inserirCriticaToolStripMenuItem.Name = "inserirCriticaToolStripMenuItem";
             this.inserirCriticaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.inserirCriticaToolStripMenuItem.Text = "Inserir Coleção";
+            this.inserirCriticaToolStripMenuItem.Click += new System.EventHandler(this.inserirCriticaToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // inserirToolStripMenuItem
+            // 
+            this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
+            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.inserirToolStripMenuItem.Text = "Inserir";
+            this.inserirToolStripMenuItem.Click += new System.EventHandler(this.inserirToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(666, 268);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Form1";
-            this.Text = "Form12";
+            this.Text = "Menu ";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -135,5 +152,6 @@
         private System.Windows.Forms.ToolStripMenuItem listarCriticasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inserirCriticaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem;
     }
 }

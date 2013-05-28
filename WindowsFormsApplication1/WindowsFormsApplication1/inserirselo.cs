@@ -9,14 +9,22 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class listarcolecao : Form
+    public partial class inserirselo : Form
     {
-        public listarcolecao()
+        public inserirselo()
         {
             InitializeComponent();
         }
 
-        private void listarcolecao_Load(object sender, EventArgs e)
+        private void seloBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.seloBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.database1DataSet);
+
+        }
+
+        private void inserirselo_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'database1DataSet.Selo' table. You can move, or remove it, as needed.
             this.seloTableAdapter.Fill(this.database1DataSet.Selo);
@@ -24,6 +32,11 @@ namespace WindowsFormsApplication1
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
             Form1 frm = new Form1();
             frm.Show();
