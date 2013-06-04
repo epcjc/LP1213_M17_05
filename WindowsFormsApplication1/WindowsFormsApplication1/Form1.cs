@@ -56,5 +56,10 @@ namespace WindowsFormsApplication1
             inserirselo frm = new inserirselo();
             frm.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

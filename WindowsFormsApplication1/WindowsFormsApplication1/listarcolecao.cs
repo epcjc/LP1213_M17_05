@@ -18,6 +18,10 @@ namespace WindowsFormsApplication1
 
         private void listarcolecao_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'database1DataSet.ligação' table. You can move, or remove it, as needed.
+            this.ligaçãoTableAdapter.Fill(this.database1DataSet.ligação);
+            // TODO: This line of code loads data into the 'database1DataSet.Correspondente' table. You can move, or remove it, as needed.
+            this.correspondenteTableAdapter.Fill(this.database1DataSet.Correspondente);
             // TODO: This line of code loads data into the 'database1DataSet.Selo' table. You can move, or remove it, as needed.
             this.seloTableAdapter.Fill(this.database1DataSet.Selo);
 
