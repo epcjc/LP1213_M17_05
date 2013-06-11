@@ -47,8 +47,7 @@ namespace WindowsFormsApplication1
 
         private void inserirCriticaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            inserircolecao frm = new inserircolecao();
-            frm.Show();
+         
         }
 
         private void inserirToolStripMenuItem_Click(object sender, EventArgs e)

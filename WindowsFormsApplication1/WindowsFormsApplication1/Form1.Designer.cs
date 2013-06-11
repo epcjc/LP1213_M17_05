@@ -37,7 +37,6 @@
             this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.críticaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarCriticasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inserirCriticaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
@@ -99,8 +98,7 @@
             // críticaToolStripMenuItem
             // 
             this.críticaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listarCriticasToolStripMenuItem,
-            this.inserirCriticaToolStripMenuItem});
+            this.listarCriticasToolStripMenuItem});
             this.críticaToolStripMenuItem.Name = "críticaToolStripMenuItem";
             this.críticaToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.críticaToolStripMenuItem.Text = "Coleção";
@@ -111,13 +109,6 @@
             this.listarCriticasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.listarCriticasToolStripMenuItem.Text = "Listar Coleção";
             this.listarCriticasToolStripMenuItem.Click += new System.EventHandler(this.listarCriticasToolStripMenuItem_Click);
-            // 
-            // inserirCriticaToolStripMenuItem
-            // 
-            this.inserirCriticaToolStripMenuItem.Name = "inserirCriticaToolStripMenuItem";
-            this.inserirCriticaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.inserirCriticaToolStripMenuItem.Text = "Inserir Coleção";
-            this.inserirCriticaToolStripMenuItem.Click += new System.EventHandler(this.inserirCriticaToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -145,6 +136,8 @@
             this.ClientSize = new System.Drawing.Size(666, 268);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
+            this.HelpButton = true;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Menu ";
             this.menuStrip1.ResumeLayout(false);
@@ -163,7 +156,6 @@
         private System.Windows.Forms.ToolStripMenuItem classificação5ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem críticaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarCriticasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inserirCriticaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem;
         private System.Windows.Forms.Button button1;

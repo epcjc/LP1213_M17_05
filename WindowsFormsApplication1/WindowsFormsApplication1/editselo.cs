@@ -21,5 +21,12 @@ namespace WindowsFormsApplication1
             editselo frm = new editselo();
             frm.Show();
         }
+
+        private void editselo_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'database1DataSet.Selo' table. You can move, or remove it, as needed.
+            this.seloTableAdapter.Fill(this.database1DataSet.Selo);
+
+        }
     }
 }
