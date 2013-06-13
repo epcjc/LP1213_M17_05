@@ -32,9 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(editselo));
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.database1DataSet = new WindowsFormsApplication1.Database1DataSet();
-            this.seloBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.seloTableAdapter = new WindowsFormsApplication1.Database1DataSetTableAdapters.SeloTableAdapter();
             this.numeroserieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.serieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,9 +40,12 @@
             this.paisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valorfacialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.qtdstockDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.seloBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database1DataSet = new WindowsFormsApplication1.Database1DataSet();
+            this.seloTableAdapter = new WindowsFormsApplication1.Database1DataSetTableAdapters.SeloTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seloBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -77,20 +77,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(700, 254);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // database1DataSet
-            // 
-            this.database1DataSet.DataSetName = "Database1DataSet";
-            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // seloBindingSource
-            // 
-            this.seloBindingSource.DataMember = "Selo";
-            this.seloBindingSource.DataSource = this.database1DataSet;
-            // 
-            // seloTableAdapter
-            // 
-            this.seloTableAdapter.ClearBeforeFill = true;
             // 
             // numeroserieDataGridViewTextBoxColumn
             // 
@@ -140,6 +126,20 @@
             this.qtdstockDataGridViewTextBoxColumn.HeaderText = "qtdstock";
             this.qtdstockDataGridViewTextBoxColumn.Name = "qtdstockDataGridViewTextBoxColumn";
             // 
+            // seloBindingSource
+            // 
+            this.seloBindingSource.DataMember = "Selo";
+            this.seloBindingSource.DataSource = this.database1DataSet;
+            // 
+            // database1DataSet
+            // 
+            this.database1DataSet.DataSetName = "Database1DataSet";
+            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // seloTableAdapter
+            // 
+            this.seloTableAdapter.ClearBeforeFill = true;
+            // 
             // editselo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -148,12 +148,15 @@
             this.ClientSize = new System.Drawing.Size(724, 307);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
+            this.HelpButton = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "editselo";
             this.Text = "Eliminar/Alterar Selo";
             this.Load += new System.EventHandler(this.editselo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.seloBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

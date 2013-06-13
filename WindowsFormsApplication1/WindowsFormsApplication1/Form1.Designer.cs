@@ -39,6 +39,8 @@
             this.listarCriticasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
+            this.relatorioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.seloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,6 +50,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.restaurantesToolStripMenuItem,
             this.críticaToolStripMenuItem,
+            this.relatorioToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -128,6 +131,21 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // relatorioToolStripMenuItem
+            // 
+            this.relatorioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.seloToolStripMenuItem});
+            this.relatorioToolStripMenuItem.Name = "relatorioToolStripMenuItem";
+            this.relatorioToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.relatorioToolStripMenuItem.Text = "Relatorio";
+            // 
+            // seloToolStripMenuItem
+            // 
+            this.seloToolStripMenuItem.Name = "seloToolStripMenuItem";
+            this.seloToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.seloToolStripMenuItem.Text = "Selo";
+            this.seloToolStripMenuItem.Click += new System.EventHandler(this.seloToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -138,6 +156,7 @@
             this.Controls.Add(this.menuStrip1);
             this.HelpButton = true;
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Menu ";
             this.menuStrip1.ResumeLayout(false);
@@ -159,5 +178,7 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem relatorioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem seloToolStripMenuItem;
     }
 }

@@ -60,5 +60,11 @@ namespace WindowsFormsApplication1
         {
             Application.Exit();
         }
+
+        private void seloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Relatorio_Selos frm = new Relatorio_Selos();
+            frm.Show();
+        }
     }
 }

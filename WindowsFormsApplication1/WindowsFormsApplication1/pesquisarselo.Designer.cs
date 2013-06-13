@@ -47,6 +47,7 @@
             this.seloTableAdapter = new WindowsFormsApplication1.Database1DataSetTableAdapters.SeloTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seloBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
@@ -54,9 +55,11 @@
             // 
             // textBox1
             // 
+            this.helpProvider1.SetHelpString(this.textBox1, "insirao nome do selo que tenciona procurar");
             this.textBox1.Location = new System.Drawing.Point(243, 56);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.helpProvider1.SetShowHelp(this.textBox1, true);
             this.textBox1.Size = new System.Drawing.Size(250, 20);
             this.textBox1.TabIndex = 0;
             // 
@@ -173,6 +176,10 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // helpProvider1
+            // 
+            this.helpProvider1.HelpNamespace = "Não pode ser vazio";
+            // 
             // pesquisarselo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -184,6 +191,9 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
+            this.HelpButton = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "pesquisarselo";
             this.Text = "pesquisarselo";
             this.Load += new System.EventHandler(this.pesquisarselo_Load);
@@ -214,5 +224,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn qtdstockDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }

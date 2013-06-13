@@ -49,8 +49,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -110,6 +113,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Relatorio_Selos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio_Selos.Designer.cs">
+      <DependentUpon>Relatorio_Selos.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="editselo.resx">
       <DependentUpon>editselo.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +149,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Relatorio_Selos.rdlc" />
+    <EmbeddedResource Include="Relatorio_Selos.resx">
+      <DependentUpon>Relatorio_Selos.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Database1DataSet.xsc">
       <DependentUpon>Database1DataSet.xsd</DependentUpon>

@@ -36,13 +36,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.database1DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.seloBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.correspondenteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.correspondenteTableAdapter = new WindowsFormsApplication1.Database1DataSetTableAdapters.CorrespondenteTableAdapter();
-            this.fKligaçãoCorrespondenteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ligaçãoTableAdapter = new WindowsFormsApplication1.Database1DataSetTableAdapters.ligaçãoTableAdapter();
-            this.fKligaçãoSeloBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.seloBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.numeroserieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.serieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,15 +44,22 @@
             this.paisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valorfacialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.qtdstockDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.seloBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.seloBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.correspondenteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.correspondenteTableAdapter = new WindowsFormsApplication1.Database1DataSetTableAdapters.CorrespondenteTableAdapter();
+            this.fKligaçãoCorrespondenteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ligaçãoTableAdapter = new WindowsFormsApplication1.Database1DataSetTableAdapters.ligaçãoTableAdapter();
+            this.fKligaçãoSeloBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seloBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seloBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seloBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.correspondenteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKligaçãoCorrespondenteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKligaçãoSeloBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.seloBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // database1DataSet
@@ -111,39 +111,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(602, 378);
             this.dataGridView1.TabIndex = 3;
             // 
-            // seloBindingSource1
-            // 
-            this.seloBindingSource1.DataMember = "Selo";
-            this.seloBindingSource1.DataSource = this.database1DataSetBindingSource;
-            // 
-            // correspondenteBindingSource
-            // 
-            this.correspondenteBindingSource.DataMember = "Correspondente";
-            this.correspondenteBindingSource.DataSource = this.database1DataSetBindingSource;
-            // 
-            // correspondenteTableAdapter
-            // 
-            this.correspondenteTableAdapter.ClearBeforeFill = true;
-            // 
-            // fKligaçãoCorrespondenteBindingSource
-            // 
-            this.fKligaçãoCorrespondenteBindingSource.DataMember = "FK_ligação_Correspondente";
-            this.fKligaçãoCorrespondenteBindingSource.DataSource = this.correspondenteBindingSource;
-            // 
-            // ligaçãoTableAdapter
-            // 
-            this.ligaçãoTableAdapter.ClearBeforeFill = true;
-            // 
-            // fKligaçãoSeloBindingSource
-            // 
-            this.fKligaçãoSeloBindingSource.DataMember = "FK_ligação_Selo";
-            this.fKligaçãoSeloBindingSource.DataSource = this.seloBindingSource1;
-            // 
-            // seloBindingSource2
-            // 
-            this.seloBindingSource2.DataMember = "Selo";
-            this.seloBindingSource2.DataSource = this.database1DataSet;
-            // 
             // numeroserieDataGridViewTextBoxColumn
             // 
             this.numeroserieDataGridViewTextBoxColumn.DataPropertyName = "numeroserie";
@@ -192,6 +159,39 @@
             this.qtdstockDataGridViewTextBoxColumn.HeaderText = "qtdstock";
             this.qtdstockDataGridViewTextBoxColumn.Name = "qtdstockDataGridViewTextBoxColumn";
             // 
+            // seloBindingSource2
+            // 
+            this.seloBindingSource2.DataMember = "Selo";
+            this.seloBindingSource2.DataSource = this.database1DataSet;
+            // 
+            // seloBindingSource1
+            // 
+            this.seloBindingSource1.DataMember = "Selo";
+            this.seloBindingSource1.DataSource = this.database1DataSetBindingSource;
+            // 
+            // correspondenteBindingSource
+            // 
+            this.correspondenteBindingSource.DataMember = "Correspondente";
+            this.correspondenteBindingSource.DataSource = this.database1DataSetBindingSource;
+            // 
+            // correspondenteTableAdapter
+            // 
+            this.correspondenteTableAdapter.ClearBeforeFill = true;
+            // 
+            // fKligaçãoCorrespondenteBindingSource
+            // 
+            this.fKligaçãoCorrespondenteBindingSource.DataMember = "FK_ligação_Correspondente";
+            this.fKligaçãoCorrespondenteBindingSource.DataSource = this.correspondenteBindingSource;
+            // 
+            // ligaçãoTableAdapter
+            // 
+            this.ligaçãoTableAdapter.ClearBeforeFill = true;
+            // 
+            // fKligaçãoSeloBindingSource
+            // 
+            this.fKligaçãoSeloBindingSource.DataMember = "FK_ligação_Selo";
+            this.fKligaçãoSeloBindingSource.DataSource = this.seloBindingSource1;
+            // 
             // listarcolecao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -200,6 +200,9 @@
             this.ClientSize = new System.Drawing.Size(626, 431);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
+            this.HelpButton = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "listarcolecao";
             this.Text = "Listagem da Coleção";
             this.Load += new System.EventHandler(this.listarcolecao_Load);
@@ -207,11 +210,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.seloBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seloBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.seloBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.correspondenteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKligaçãoCorrespondenteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKligaçãoSeloBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.seloBindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
