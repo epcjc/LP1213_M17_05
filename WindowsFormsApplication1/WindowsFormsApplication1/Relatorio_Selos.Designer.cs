@@ -30,13 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.Database1DataSet = new WindowsFormsApplication1.Database1DataSet();
             this.SeloBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Database1DataSet = new WindowsFormsApplication1.Database1DataSet();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SeloTableAdapter = new WindowsFormsApplication1.Database1DataSetTableAdapters.SeloTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.Database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SeloBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Database1DataSet)).BeginInit();
             this.SuspendLayout();
+            // 
+            // SeloBindingSource
+            // 
+            this.SeloBindingSource.DataMember = "Selo";
+            this.SeloBindingSource.DataSource = this.Database1DataSet;
+            // 
+            // Database1DataSet
+            // 
+            this.Database1DataSet.DataSetName = "Database1DataSet";
+            this.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -47,18 +57,8 @@
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "WindowsFormsApplication1.Relatorio_Selos.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(284, 261);
+            this.reportViewer1.Size = new System.Drawing.Size(635, 261);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // Database1DataSet
-            // 
-            this.Database1DataSet.DataSetName = "Database1DataSet";
-            this.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // SeloBindingSource
-            // 
-            this.SeloBindingSource.DataMember = "Selo";
-            this.SeloBindingSource.DataSource = this.Database1DataSet;
             // 
             // SeloTableAdapter
             // 
@@ -68,13 +68,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(635, 261);
             this.Controls.Add(this.reportViewer1);
             this.Name = "Relatorio_Selos";
             this.Text = "Relatorio_Selos";
             this.Load += new System.EventHandler(this.Relatorio_Selos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SeloBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Database1DataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

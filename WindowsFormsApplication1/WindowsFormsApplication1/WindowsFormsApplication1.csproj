@@ -154,6 +154,7 @@
       <DependentUpon>Relatorio_Selos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="Coleção de Selos.chm" />
     <None Include="Database1DataSet.xsc">
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </None>

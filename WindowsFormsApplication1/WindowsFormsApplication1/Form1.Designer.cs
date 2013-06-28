@@ -37,10 +37,12 @@
             this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.críticaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarCriticasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
             this.relatorioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,9 +111,24 @@
             // listarCriticasToolStripMenuItem
             // 
             this.listarCriticasToolStripMenuItem.Name = "listarCriticasToolStripMenuItem";
-            this.listarCriticasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.listarCriticasToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.listarCriticasToolStripMenuItem.Text = "Listar Coleção";
             this.listarCriticasToolStripMenuItem.Click += new System.EventHandler(this.listarCriticasToolStripMenuItem_Click);
+            // 
+            // relatorioToolStripMenuItem
+            // 
+            this.relatorioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.seloToolStripMenuItem});
+            this.relatorioToolStripMenuItem.Name = "relatorioToolStripMenuItem";
+            this.relatorioToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.relatorioToolStripMenuItem.Text = "Relatorio";
+            // 
+            // seloToolStripMenuItem
+            // 
+            this.seloToolStripMenuItem.Name = "seloToolStripMenuItem";
+            this.seloToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
+            this.seloToolStripMenuItem.Text = "Selo";
+            this.seloToolStripMenuItem.Click += new System.EventHandler(this.seloToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -131,20 +148,15 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // relatorioToolStripMenuItem
+            // button2
             // 
-            this.relatorioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.seloToolStripMenuItem});
-            this.relatorioToolStripMenuItem.Name = "relatorioToolStripMenuItem";
-            this.relatorioToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.relatorioToolStripMenuItem.Text = "Relatorio";
-            // 
-            // seloToolStripMenuItem
-            // 
-            this.seloToolStripMenuItem.Name = "seloToolStripMenuItem";
-            this.seloToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.seloToolStripMenuItem.Text = "Selo";
-            this.seloToolStripMenuItem.Click += new System.EventHandler(this.seloToolStripMenuItem_Click);
+            this.button2.Location = new System.Drawing.Point(423, 177);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Ajuda";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
@@ -152,6 +164,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(666, 268);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.HelpButton = true;
@@ -159,6 +172,7 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Menu ";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -180,5 +194,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStripMenuItem relatorioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem seloToolStripMenuItem;
+        private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.Button button2;
     }
 }

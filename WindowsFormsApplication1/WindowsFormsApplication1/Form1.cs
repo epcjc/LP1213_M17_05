@@ -66,5 +66,15 @@ namespace WindowsFormsApplication1
             Relatorio_Selos frm = new Relatorio_Selos();
             frm.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "Coleção de Selos.chm");
+        }
     }
 }
